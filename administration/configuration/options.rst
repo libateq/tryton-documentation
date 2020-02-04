@@ -62,7 +62,7 @@ cache_timeout
 
 cors
     This option allow you to specify a list of origins that are allowed for
-    `Cross-Origin Resource Sharing`_.
+    `Cross-Origin Resource Sharing`_.  Each origin should be on its own line.
 
 
 database
@@ -78,6 +78,9 @@ uri
     .. ::
 
         database://username:password@host:port/
+
+    For historic reasons a default value for this option can be provided using
+    the ``TRYTOND_DATABASE_URI`` environment variable.
 
     Connections to PostgreSQL databases can be done over TCP/IP and Unix
     domain sockets, here are a few examples.
@@ -98,6 +101,9 @@ uri
 
         # Connection to an SQLite database
         uri = sqlite:///path/to/tryton/db.sqlite
+
+    The default value for this option is ``sqlite://`` if no other value is
+    provided.
 
 path
     This is the path to the directory where Tryton stores data files such as
@@ -310,7 +316,10 @@ uri
         then the default timeout for the socket will be used.
 
 from
-    This is the from address that is used on emails that are sent by Tryton.
+    This is the from address that is used on emails that are sent by Tryton,
+    it should be in the format specified in RFC-822_, e.g.:
+
+        from: "Example Ltd" <info@example.com>
 
 
 session
@@ -532,6 +541,26 @@ class
     a specific field use a configuration option of ``class-<model>-<field>``.
 
     By default no body class is used.
+
+
+wsgi middleware
+^^^^^^^^^^^^^^^
+
+This section lists the `WSGI Middleware`_ classes to load.
+
+Each middleware that is loaded can be configured with a section named
+``wsgi <middleware_name>``.  In this section the ``args`` and ``kwargs``
+options for the middleware can be set.
+
+For example:
+
+.. code-block:: ini
+
+    [wsgi middleware]
+    ie = werkzeug.contrib.fixers.InternetExplorerFix
+
+    [wsgi ie]
+    kwargs={'fix_attach': False}
 
 
 .. include:: /common/global.rst

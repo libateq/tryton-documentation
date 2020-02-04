@@ -12,11 +12,13 @@
 .. _PyPI: https://pypi.org/
 .. _Python: https://docs.python.org/
 .. _Relatorio: https://relatorio.readthedocs.io/
+.. _RFC-822: http://tools.ietf.org/html/rfc822
 .. _RFC-2255: http://tools.ietf.org/html/rfc2255
 .. _RFC-3986: http://tools.ietf.org/html/rfc3986
 .. _SMTP-URL: https://tools.ietf.org/html/draft-earhart-url-smtp-00
 .. _SSL: http://en.wikipedia.org/wiki/Secure_Sockets_Layer
 .. _TinyMCE: https://www.tiny.cloud/
+.. _WSGI Middleware: https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface#Specification_overview
 .. _YAML: https://yaml.org/
 
 .. _`official Docker Documentation`: https://docs.docker.com/

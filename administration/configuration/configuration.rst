@@ -54,4 +54,3 @@ For example:
 
 
 .. include:: /common/global.rst
-
