@@ -51,7 +51,7 @@ autosectionlabel_prefix_document = True
 inherit_modules_dir = 'modules'
 
 # Tryton settings
-trytond_modules = []
+trytond_activate_modules = []
 
 # HTML output settings
 html_static_path = []
