@@ -62,8 +62,15 @@ cache_timeout
 
 cors
     This option allow you to specify a list of origins that are allowed for
-    `Cross-Origin Resource Sharing`_.  Each origin should be on its own line.
+    `Cross-Origin Resource Sharing`_.  Each origin should be on its own line,
+    for example:
 
+    .. code-block:: ini
+
+        [web]
+        cors =
+            https://example.com
+            https://api.example.com
 
 database
 ^^^^^^^^
