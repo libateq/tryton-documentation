@@ -2,6 +2,7 @@
 .. _`Chorus Pro`: https://chorus-pro.gouv.fr/
 .. _`Cross-Origin Resource Sharing`: https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
 .. _CryptContext: https://passlib.readthedocs.io/en/stable/narr/context-tutorial.html#loading-saving-a-cryptcontext
+.. _Debian: https://www.debian.org/
 .. _Diffie-Hellman: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 .. _Genshi: https://genshi.edgewall.org/
 .. _GNU Health: http://health.gnu.org/
@@ -37,6 +38,11 @@
 .. _`list of timezones`: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 .. _`public-key cryptography`: https://en.wikipedia.org/wiki/Public-key_cryptography
 .. _`two-factor authentication`: https://en.wikipedia.org/wiki/Two-factor_authentication
+
+.. _`Debian-Tryton distributions`: http://debian.m9s.biz/debian/dists/
+.. _`Tryton Debian APT Repository`: https://tryton-team.pages.debian.net/mirror.html
+.. _`Tryton Debian Supporters`: https://tryton-team.pages.debian.net/supporters.html
+.. _`Tryton Release Process`: https://discuss.tryton.org/t/release-process/395
 
 .. _`PostgreSQL Downloads`: https://www.postgresql.org/download/
 .. _`PostgreSQL Documentation`: https://www.postgresql.org/docs/current/index.html

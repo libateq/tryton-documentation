@@ -56,6 +56,8 @@ open are controlled by opening the :tryton:menu:`ir.menu_action_report_form`
 menu item.  For each report you can set the
 :tryton:field:`~ir.action.report.groups` that are allowed to open the report.
 
+.. _administration/system/access/actions:wizards:
+
 Wizards
 ^^^^^^^
 

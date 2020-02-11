@@ -46,6 +46,7 @@ templates_path = []
 
 # Auto section label settings
 autosectionlabel_prefix_document = True
+autosectionlabel_maxdepth = 2
 
 # Inheritance settings
 inherit_modules_dir = 'modules'

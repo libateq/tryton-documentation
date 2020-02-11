@@ -4,8 +4,8 @@ trytond-admin
 TODO: Document this subject
 
 
-Initialise a Database
----------------------
+Initialising a Database
+-----------------------
 
 TODO
 

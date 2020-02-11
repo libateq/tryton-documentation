@@ -31,8 +31,8 @@ from source then there are chapters that cover that process in the `PostgreSQL
 Documentation`_.
 
 
-Setup the Database
-------------------
+Setup a Database
+----------------
 
 Once you have PostgreSQL running on your chosen system you then need to create
 a database on it for use with Tryton.  Often you will also want to create a new
@@ -54,7 +54,7 @@ to also provide additional connection information to the command, see the
 `PostgreSQL Documentation`_ for more information.
 
 You can also use the ``CREATE ROLE`` SQL command if you are already connected
-to the database:
+to the database with the ``psql`` command:
 
 .. code-block:: sql
 
@@ -79,19 +79,20 @@ this is especially important as the Tryton server requires this.
 There are also other options that can be specified when creating a new
 database, these are described in detail in the `PostgreSQL Documentation`_.
 
-The equivalent SQL command would be:
+If you are already connected to a database with the ``psql`` command then the
+equivalent SQL command would be:
 
 .. code-block:: sql
 
     CREATE DATABASE tryton OWNER tryton ENCODING UTF8;
 
-Initialise the Database
-^^^^^^^^^^^^^^^^^^^^^^^
+Initialising the Database
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Before the Tryton server can use the database it needs to be initialised.
 The :ref:`administration/services/trytond-admin:trytond-admin` command is used
-to :ref:`administration/services/trytond-admin:initialise a database`,
-and make it ready for use.
+when :ref:`administration/services/trytond-admin:initialising a database`,
+and making it ready for use.
 
 
 .. include:: /common/global.rst

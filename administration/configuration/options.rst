@@ -244,6 +244,8 @@ clean_timeout
     By default this is set to ``300`` seconds.
 
 
+.. _administration/configuration/options:queue:
+
 queue
 ^^^^^
 
@@ -277,6 +279,8 @@ tables in the database.
     ir.action.act_window.domain = ir_window_domain
     ir.model.field.access = ir_field_access
 
+
+.. _administration/configuration/options:ssl:
 
 ssl
 ^^^
