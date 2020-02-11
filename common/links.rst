@@ -9,6 +9,7 @@
 .. _LibreOffice: https://www.libreoffice.org/
 .. _Nginx: https://www.nginx.com/
 .. _PassLib: https://passlib.readthedocs.io/
+.. _PostgreSQL: https://www.postgresql.org/
 .. _PyPI: https://pypi.org/
 .. _Python: https://docs.python.org/
 .. _Relatorio: https://relatorio.readthedocs.io/
@@ -36,3 +37,6 @@
 .. _`list of timezones`: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 .. _`public-key cryptography`: https://en.wikipedia.org/wiki/Public-key_cryptography
 .. _`two-factor authentication`: https://en.wikipedia.org/wiki/Two-factor_authentication
+
+.. _`PostgreSQL Downloads`: https://www.postgresql.org/download/
+.. _`PostgreSQL Documentation`: https://www.postgresql.org/docs/current/index.html
