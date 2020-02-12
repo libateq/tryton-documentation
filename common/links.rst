@@ -8,6 +8,8 @@
 .. _GNU Health: http://health.gnu.org/
 .. _LetsEncrypt: https://letsencrypt.org/
 .. _LibreOffice: https://www.libreoffice.org/
+.. _MariaDB: https://mariadb.com/
+.. _MySQL: https://www.mysql.com/
 .. _Nginx: https://www.nginx.com/
 .. _PassLib: https://passlib.readthedocs.io/
 .. _PostgreSQL: https://www.postgresql.org/
@@ -46,3 +48,6 @@
 
 .. _`PostgreSQL Downloads`: https://www.postgresql.org/download/
 .. _`PostgreSQL Documentation`: https://www.postgresql.org/docs/current/index.html
+
+.. _`Sandbox trytond-mysql repostitory`: https://hg.tryton.org/sandbox/trytond-mysql/
+.. _issue7017: https://bugs.tryton.org/issue7017
