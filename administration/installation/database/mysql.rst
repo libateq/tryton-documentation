@@ -12,10 +12,11 @@ MySQL so it can be used as a drop in replacement when desired.
 Depreciation
 ------------
 
-MySQL was removed in issue7017_ as a core backend for Tryton 4.8 and later.
-This was because the binding that was used by Tryton for MySQL did not support
-Python 3.  It is still available in the `Sandbox trytond-mysql repostitory`_
-https://hg.tryton.org/sandbox/trytond-mysql/
+Originally a core backend for Tryton, MySQL was removed from Tryton version 4.8
+and later by issue7017_.  This was because the binding that was being used did
+not support Python 3.
+
+This backend is still available in the `Sandbox trytond-mysql repostitory`_
 but as it stands is unlikely to work with current versions of Tryton because
 of the reasons it was dropped in the first place and the fact that it has been
 unmaintained since it was removed.
