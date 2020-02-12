@@ -1,3 +1,4 @@
+.. _B2CK: https://www.b2ck.com/
 .. _`Certificate Authority`: https://en.wikipedia.org/wiki/Certificate_authority
 .. _`Chorus Pro`: https://chorus-pro.gouv.fr/
 .. _`Cross-Origin Resource Sharing`: https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
@@ -11,6 +12,7 @@
 .. _MariaDB: https://mariadb.com/
 .. _MySQL: https://www.mysql.com/
 .. _Nginx: https://www.nginx.com/
+.. _`Oracle Corporation`: https://www.oracle.com/index.html
 .. _PassLib: https://passlib.readthedocs.io/
 .. _PostgreSQL: https://www.postgresql.org/
 .. _PyPI: https://pypi.org/
@@ -38,6 +40,7 @@
 
 .. _`configuration file format`: https://docs.python.org/3/library/logging.config.html#configuration-file-format
 .. _`list of timezones`: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+.. _multi-model: https://en.wikipedia.org/wiki/Multi-model_database
 .. _`public-key cryptography`: https://en.wikipedia.org/wiki/Public-key_cryptography
 .. _`two-factor authentication`: https://en.wikipedia.org/wiki/Two-factor_authentication
 
@@ -51,3 +54,9 @@
 
 .. _`Sandbox trytond-mysql repostitory`: https://hg.tryton.org/sandbox/trytond-mysql/
 .. _issue7017: https://bugs.tryton.org/issue7017
+
+.. _cx_Oracle: https://oracle.github.io/python-cx_Oracle/
+.. _issue4809: https://bugs.tryton.org/issue4809
+.. _issue4814: https://bugs.tryton.org/issue4814
+.. _issue4881: https://bugs.tryton.org/issue4881
+.. _trytond_backend_oracle: https://hg.b2ck.com/trytond_backend_oracle/

@@ -9,8 +9,8 @@ TODO: Add overview
 
     postgresql
     sqlite
-    oracle
     mysql
+    oracle
 
 
 .. include:: /common/global.rst
