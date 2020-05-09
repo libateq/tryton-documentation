@@ -336,7 +336,7 @@ The other file that you need to create is the ``dhparam.pem`` file.
 The contents for this file is available at
 https://ssl-config.mozilla.org/ffdhe2048.txt,
 so open the link in your browser and copy its contents into the 
-``dhparam.pem`` file.
+``nginx-config/ssl/dhparam.pem`` file.
 
 Modify the ``docker-compose.yaml`` File
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
