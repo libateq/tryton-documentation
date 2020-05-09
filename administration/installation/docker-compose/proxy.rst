@@ -349,7 +349,7 @@ start of the http port:
     version: "3.5"
 
     services:
-        tryton:
+        nginx:
             ...
             ports:
               - "80:80"
