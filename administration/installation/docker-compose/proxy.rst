@@ -194,11 +194,11 @@ provide the configuration for the Nginx web server, these files are:
 
         server {
             server_name localhost;
-            listen 80 http2;
+            listen 80;
 
             root /var/www/static/tryton;
 
-            location / {
+            location = / {
                 if ($request_method = GET) {
                     rewrite ^ /index.html last;
                 }
@@ -209,14 +209,32 @@ provide the configuration for the Nginx web server, these files are:
                 proxy_set_header X-Real-IP $remote_addr;
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                 proxy_set_header X-Forwarded-Proto $scheme;
-                proxy_set_header X-Forwarded-Host $server_name;
+                proxy_set_header X-Forwarded-Host $http_host;
 
                 proxy_read_timeout 1200s;
 
                 client_max_body_size 0;
             }
 
-            location ~ ^/(bower_components|dist|images|index.html|locale)/ {
+            location = /index.html {
+                expires max;
+            }
+
+            location / {
+                proxy_pass http://tryton;
+
+                proxy_set_header Host $http_host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                proxy_set_header X-Forwarded-Host $http_host;
+
+                proxy_read_timeout 1200s;
+
+                client_max_body_size 0;
+            }
+
+            location ~ ^/(bower_components|dist|images|locale)/ {
                 expires max;
             }
         }
@@ -421,7 +439,7 @@ encrypted:
 
             root /var/www/static/tryton;
 
-            location / {
+            location = / {
                 if ($request_method = GET) {
                     rewrite ^ /index.html last;
                 }
@@ -432,14 +450,32 @@ encrypted:
                 proxy_set_header X-Real-IP $remote_addr;
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                 proxy_set_header X-Forwarded-Proto $scheme;
-                proxy_set_header X-Forwarded-Host $server_name;
+                proxy_set_header X-Forwarded-Host $http_host;
 
                 proxy_read_timeout 1200s;
 
                 client_max_body_size 0;
             }
 
-            location ~ ^/(bower_components|dist|images|index.html|locale)/ {
+            location = /index.html {
+                expires max;
+            }
+
+            location / {
+                proxy_pass http://tryton;
+
+                proxy_set_header Host $http_host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                proxy_set_header X-Forwarded-Host $http_host;
+
+                proxy_read_timeout 1200s;
+
+                client_max_body_size 0;
+            }
+
+            location ~ ^/(bower_components|dist|images|locale)/ {
                 expires max;
             }
         }
